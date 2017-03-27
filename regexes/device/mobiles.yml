@@ -1671,7 +1671,7 @@ Goly:
 
 # Google
 Google:
-  regex: 'Nexus|GoogleTV|Glass|CrKey[^a-z0-9]'
+  regex: 'Nexus|Pixel|GoogleTV|Glass|CrKey[^a-z0-9]'
   device: 'smartphone'
   models:
     - regex: 'Glass'
@@ -1692,6 +1692,11 @@ Google:
     - regex: 'GoogleTV'
       device: 'tv'
       model: 'GoogleTV'
+    - regex: 'Pixel C'
+      device: 'tablet'
+      model: '$1'
+    - regex: '(Pixel (XL)?)'
+      model: '$1'
 
 # Gradiente
 Gradiente:

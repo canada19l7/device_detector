@@ -139,7 +139,7 @@ describe DeviceDetector do
     describe 'Internet Explorer 11' do
 
       it 'IE 11 is not a TV on Windows 8 !' do
-        client.device_type.must_equal nil
+        client.device_type.must_equal 'desktop'
       end
 
     end
@@ -147,4 +147,3 @@ describe DeviceDetector do
   end
 
 end
-
